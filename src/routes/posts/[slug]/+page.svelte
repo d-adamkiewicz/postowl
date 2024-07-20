@@ -9,6 +9,8 @@
   import NotEditable from '$lib/components/NotEditable.svelte';
   import RecipientsSelector from '$lib/components/RecipientsSelector.svelte';
 
+	import { t } from '$lib/translations';
+
   export let data;
   let editable, title, content, created_at, teaser_image, teaser, is_public, recipients;
   let showMenu;
@@ -108,9 +110,9 @@
         on:click={() => {
           editable = true;
           showMenu = false;
-        }}>Edit post</SecondaryButton
+        }}>{$t('common.editPost')}</SecondaryButton
       >
-      <SecondaryButton size="sm" on:click={deletePost}>Delete post</SecondaryButton>
+      <SecondaryButton size="sm" on:click={deletePost}>{$t('common.deleteLetter')}</SecondaryButton>
     </div>
   {/if}
 </WebsiteNav>

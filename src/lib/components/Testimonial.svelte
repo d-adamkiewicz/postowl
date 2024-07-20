@@ -27,6 +27,7 @@
       <div class="text-lg sm:text-2xl italic">
         <PlainText {editable} bind:content={testimonial.text} />
       </div>
+			{testimonial.text}
       <div class="mt-4 md:text-xl font-medium">
         <PlainText {editable} bind:content={testimonial.name} />
       </div>
