@@ -112,7 +112,7 @@
           showMenu = false;
         }}>{$t('common.editPost')}</SecondaryButton
       >
-      <SecondaryButton size="sm" on:click={deletePost}>{$t('common.deleteLetter')}</SecondaryButton>
+      <SecondaryButton size="sm" on:click={deletePost}>{$t('common.deletePost')}</SecondaryButton>
     </div>
   {/if}
 </WebsiteNav>
