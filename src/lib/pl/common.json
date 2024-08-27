@@ -23,7 +23,7 @@
 	"signInMesg": "Jedynie właściciel może się zalogować. Ale możesz uruchomić swój własny serwis {value}.",
 	"showMore": "Pokaż więcej",
 	"passwordIncorrect": "Błędne hasło. Proszę spróbować ponownie.",
-	"enterEmail": "By wysłać do znajomych wprowadź e-mail lub nazwę.",
+	"enterEmailOrName": "By wysłać do znajomych wprowadź e-mail lub nazwę.",
 	"postTitle": "Tytuł wpisu…",
 	"postContent": "Treść wpisu…",
 	"journalAndDrafts": "Dziennik i wersje robocze",
@@ -59,7 +59,10 @@
 	"enterEmail": "Wprowadź email",
 	"deleteFriend": "Usuń znajomego",
 	"couldNotSaveAlert": "Nie można zapisać. Upewnij się, że podana nazwa lub adres e-mail nie zostały już użyte.",
-	"confirmAreYouSure": "Czy na pewno chcesz usunąć tego znajomego? Nie można tego cofnąć.",
-	"alertErrorDel": "Błąd podczas usuwania znajomego. Spróbuj ponownie.",
-	"alertErrorOccured": "Wystąpił błąd. Możesz spróbować ponownie, ale wcześniej po prostu skopiuj i wklej swój artykuł w bezpiecznym miejscu."
+	"confirmDeleteFriend": "Czy na pewno chcesz usunąć tego znajomego? Nie można tego cofnąć.",
+	"alertErrorOnDeleteFriend": "Błąd podczas usuwania znajomego. Spróbuj ponownie.",
+	"alertErrorOccured": "Wystąpił błąd. Możesz spróbować ponownie, ale wcześniej po prostu skopiuj i wklej swój artykuł w bezpiecznym miejscu.",
+	"confirmDeletePost":"Czy na pewno chcesz usunąć ten post? Nie można tego cofnąć.",
+	"alertErrorOnDeleteArticle":"Błąd usuwania artykułu. Spróbuj ponownie.",
+    "thereWasError":"Wystąpił błąd. Możesz spróbować ponownie, ale przedtem po prostu skopiuj i wklej swój artykuł w bezpieczne miejsce."
 }

@@ -9,7 +9,7 @@
   import NotEditable from '$lib/components/NotEditable.svelte';
   import RecipientsSelector from '$lib/components/RecipientsSelector.svelte';
 
-	import { t } from '$lib/translations';
+  import { t } from '$lib/translations';
 
   export let data;
   let editable, title, content, created_at, teaser_image, teaser, is_public, recipients;
@@ -21,7 +21,6 @@
     data = data;
     initOrReset();
   }
-
 
   function initOrReset() {
     title = data.title;
@@ -35,9 +34,9 @@
   }
 
   async function deletePost() {
-    if (!currentUser) return alert('Sorry, you are not authorized.');
+    if (!currentUser) return alert($t('common.notAuthorized'));
 
-    if (confirm('Are you sure you want to delete this post? It cannot be undone.')) {
+    if (confirm($t('common.confirmDeletePost'))) {
       try {
         await fetchJSON('POST', '/api/delete-post', {
           slug: data.slug
@@ -45,14 +44,14 @@
         goto('/');
       } catch (err) {
         console.error(err);
-        alert('Error deleting the article. Try again.');
+        alert($t('common.alertErrorOnDeleteArticle'));
         window.location.reload();
       }
     }
   }
 
   async function savePost() {
-    if (!currentUser) return alert('Sorry, you are not authorized.');
+    if (!currentUser) return alert($t('common.notAuthorized'));
     teaser = extractTeaser(document.getElementById('post_content'));
     teaser_image = extractTeaserImage(document.getElementById('post_content'));
     try {
@@ -73,9 +72,7 @@
       }
     } catch (err) {
       console.error(err);
-      alert(
-        'There was an error. You can try again, but before that, please just copy and paste your article into a safe place.'
-      );
+      alert($t('common.thereWasError'));
     }
   }
 </script>

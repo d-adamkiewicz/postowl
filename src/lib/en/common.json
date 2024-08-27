@@ -23,7 +23,7 @@
 	"signInMesg": "Only the owner can sign in. But you can run {value} yourself.",
 	"showMore": "Show more",
 	"passwordIncorrect": "Password incorrect. Please try again.",
-	"enterEmail": "Enter email or name to send to friends.",
+	"enterEmailOrName": "Enter email or name to send to friends.",
 	"postTitle": "Post title…",
 	"postContent": "Post content…",
 	"journalAndDrafts": "Journal and drafts",
@@ -59,7 +59,10 @@
 	"enterEmail": "Enter email",
 	"deleteFriend": "Delete friend",
 	"couldNotSaveAlert": "Could not save. Make sure that the name or email you provided haoven't been used already.",
-	"confirmAreYouSure": "Are you sure you want to delete this friend? It cannot be undone.",
-	"alertErrorDel": "Error deleting friend. Try again.",
-	"alertErrorOccured": "There was an error. You can try again, but before that, please just copy and paste your article into a safe place."
+	"confirmDeleteFriend": "Are you sure you want to delete this friend? It cannot be undone.",
+	"alertErrorOnDeleteFriend": "Error deleting friend. Try again.",
+	"alertErrorOccured": "There was an error. You can try again, but before that, please just copy and paste your article into a safe place.",
+	"confirmDeletePost":"Are you sure you want to delete this post? It cannot be undone.",
+	"alertErrorOnDeleteArticle":"Error deleting the article. Try again.",
+    "thereWasError":"There was an error. You can try again, but before that, please just copy and paste your article into a safe place."
 }
